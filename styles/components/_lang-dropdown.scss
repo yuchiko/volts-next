@@ -1,0 +1,45 @@
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  width: $language-dropdown-size;
+  height: $language-dropdown-size;
+
+  &:hover &__flag {
+    transform: translate(-80%, -60%) scale(0.5) rotate(-15deg);
+  }
+
+  &:hover &__short {
+    transform: scale(1) translate(-50%, -25%);
+    opacity: 1;
+    transition-delay: .2s;
+    color: white;
+  }
+
+  &__flag, &__short {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include transition(all);
+    transform-origin: 0 0;
+  }
+
+  &__short {
+    transform: scale(0) translate(-50%, -25%);
+    transition-delay: 0s;
+  }
+
+  &__flag {
+    width: 2.6rem;
+    height: auto;
+    // transform-origin: 50% 50%;
+  }
+
+  &__short {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    will-change: transform;
+  }
+}

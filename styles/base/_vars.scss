@@ -1,0 +1,31 @@
+/**
+ * Variables
+*/
+
+// TODO: move to css variables
+$clr-background: #020202;
+$clr-text: #7F8180;
+$clr-text-light: #D4D4D4;
+
+$base-font: "Gotham Pro", Arial, Helvetica, sans-serif;
+
+// animations
+$transition: 0.35s cubic-bezier(0.3, 0.1, 0.3, 1);
+$duration: 0.35s;
+$duration_long: 0.75s;
+$easing: cubic-bezier(0.3, 0.1, 0.3, 1);
+
+
+// THEMEs
+// ## Dark theme
+$theme-dark-bg-primary: #000000;
+$theme-dark-text-primary: #7f8180;
+$theme-dark-text-primary-bold: #F0F0F0;
+$theme-dark-bg-primary-lighten: #0f0f0f;
+
+$fw-medium: 500;
+$fw-bold: 600;
+
+// components
+$header-height: 12rem;
+$language-dropdown-size: 6rem;

@@ -1,0 +1,45 @@
+/* By Athlon Front-End Team */
+
+/* Core variables */
+@import "base/vars";
+
+/* CSS Reset */
+@import "base/reset";
+
+/* CSS print */
+@import "base/print";
+
+/* Fonts */
+@import "base/fonts";
+
+/* Mixins, helpers and functions */
+@import "base/mixins";
+
+/* Atomic styles */
+@import "base/atomic";
+
+/* Foundation framework */
+@import "foundation";
+
+@import "general";
+@import "forms";
+@import "buttons";
+
+/* components */
+@import "components/burger-menu";
+@import "components/lang-dropdown";
+@import "components/socials";
+@import "components/tabs";
+
+/* block components */
+@import "blocks/header";
+@import "blocks/welcome";
+@import "blocks/about";
+@import "blocks/partners";
+@import "blocks/advantages";
+@import "blocks/services";
+@import "blocks/person";
+@import "blocks/main-form";
+@import "blocks/news";
+@import "blocks/footer";
+

@@ -1,0 +1,12 @@
+.advantages {
+  &-item {
+    text-align: center;
+    video {
+      width: 30rem;
+      height: 20rem;
+    }
+    &__text {
+      margin-top: 4rem;
+    }
+  }
+}

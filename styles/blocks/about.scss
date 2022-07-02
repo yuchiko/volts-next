@@ -1,0 +1,28 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $clr-background;
+    color: $clr-text;
+    font-weight: $fw-medium;
+    padding-top: 10rem;
+
+    &__text {
+        font-size: 20px;
+        strong, b {
+            color: $clr-text-light;
+            font-weight: bold;
+        }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
+
+      & > *:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+}

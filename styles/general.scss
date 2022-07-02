@@ -1,0 +1,103 @@
+@import "base/vars";
+
+// by default theme is dark
+:root {
+  --theme-primary-bg: #{$theme-dark-bg-primary};
+  --theme-primary-bg-lighten: #{$theme-dark-bg-primary-lighten};
+  --theme-primary-text: #{$theme-dark-text-primary};
+  --theme-primary-text-accent: #{$theme-dark-text-primary-bold};
+  --theme-accent-color: #ffd701;
+}
+
+html {
+  font-size: 10px;
+
+  @media (min-width: 1440px) {
+    font-size: 0.699304vw;
+  }
+}
+
+
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  background: var(--theme-primary-bg);
+  color: var(--theme-primary-text);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus,
+button:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+}
+
+a:focus-visible,
+button:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid #443ffc;
+	outline-offset: 3px;
+}
+
+.sc {
+  padding: 80px 0;
+
+  &__heading {
+    color: var(--theme-accent-color);
+    font-size: 3rem;
+    font-weight: $fw-bold;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  &--invert-bg {
+    background: $white;
+  }
+
+  &--invert &__heading {
+    color: #303030;
+  }
+
+  &-pb-0 {
+    padding-bottom: 0;
+  }
+
+  &-pt-0 {
+    padding-top: 0;
+  }
+}
+
+b {
+  font-weight: $fw-bold;
+  color: var(--theme-primary-text-accent);
+}
+
+
+
+.circle-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #303030;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  flex: 0 0 5rem;
+
+  img {
+    width: 2rem;
+    height: auto;
+    flex: 0 0 2rem;
+  }
+}
