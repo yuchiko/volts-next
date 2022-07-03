@@ -8,7 +8,7 @@ import AboutSection from "components/AboutSection";
 import AdvantagesSection from "components/AdvantagesSection";
 import PartnersSection from "components/PartnersSection";
 import ServicesSection from "components/ServicesSection";
-import PersonSection from "components/ServicesSection";
+import PersonSection from "components/PersonSection";
 import MainFormSection from "components/MainFormSection";
 import NewsSection from "components/NewsSection";
 
@@ -30,7 +30,7 @@ export default function Home() {
       <ServicesSection />
       <PersonSection />
       <MainFormSection />
-      <NewsSection />      
+      <NewsSection />
       <Footer />
     </div>
   );

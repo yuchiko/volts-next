@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const AboutSection = () => {
+const PersonSection = () => {
     return 'welcome'
 }
 
-export default AboutSection
+export default PersonSection
