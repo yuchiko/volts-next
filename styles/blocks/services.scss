@@ -12,7 +12,12 @@
     &:hover {
       // background: var(--theme-primary-bg-lighten);
 
-      .in, .out {
+      .expanded-icon span {
+        transform: translate(0, 0) !important;
+      }
+
+      .in,
+      .out {
         opacity: 1;
         transform: translate(0);
       }
@@ -28,10 +33,14 @@
       .services-item__icon {
         fill: var(--theme-accent-color);
       }
-
     }
 
-
+    &__expand {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+    }
 
     &__header {
       margin-bottom: 3rem;
@@ -47,7 +56,7 @@
 
     &__text {
       @include transition(color);
-      height: 18rem; 
+      height: 18rem;
     }
 
     &__icon {
@@ -65,7 +74,8 @@
       justify-content: space-between;
     }
 
-    .in, .out {
+    .in,
+    .out {
       position: absolute;
       top: 0;
       left: 0;
@@ -76,7 +86,7 @@
       @include transition(opacity, transform);
       opacity: 0;
       border-radius: 15px;
-      transition-duration: .5s;
+      transition-duration: 0.5s;
     }
 
     .in {
@@ -92,15 +102,40 @@
       top: 0;
       left: 2.5rem;
       z-index: -1;
-      width: .3rem;
+      width: 0.3rem;
       height: 8rem;
       background: var(--theme-accent-color);
       // TODO: ask Vasya for gradient
-      background: linear-gradient(0deg, rgba(239,255,0,1) 0%, rgba(228,245,40,0.5) 35%, rgba(255,255,255,0.6) 100%);
+      background: linear-gradient(
+        0deg,
+        rgba(239, 255, 0, 1) 0%,
+        rgba(228, 245, 40, 0.5) 35%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
       @include transition(opacity, transform);
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       transform: translate(-100%, -100%);
     }
+  }
+}
 
+.expanded-icon {
+  display: flex;
+  flex-direction: column;
+  span {
+    line-height: 0;
+    @include transition(all);
+    &:first-child {
+      padding-right: 1.5rem;
+      transform: translate(10%, 10%);
+    }
+    &:last-child {
+      padding-left: 1.5rem;
+      transform: translate(-10%, -10%);
+    }
+  }
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
   }
 }

@@ -58,7 +58,7 @@
     color: #303030;
 
     .button__icon {
-      background: #E4E4E4;
+      background: #e4e4e4;
 
       svg {
         stroke: #303030;
@@ -86,11 +86,30 @@
     align-items: center;
     justify-content: center;
 
-    img, svg {
+    img,
+    svg {
       width: 1rem;
       height: auto;
       flex: 0 0 1rem;
     }
+  }
+}
+
+.button-circle {
+  display: flex;
+  background: #303030;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  flex: 0 0 5rem;
+  align-items: center;
+  justify-content: center;
+
+  img,
+  svg {
+    width: 1rem;
+    height: auto;
+    flex: 0 0 1rem;
   }
 }
 
