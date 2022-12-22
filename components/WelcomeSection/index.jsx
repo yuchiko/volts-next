@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+// components
+import SocialsList from "components/SocialsList";
+// icons
 import PaperPlaneIcon from "images/icons/paper-plane.svg";
 import EnergyIcon from "images/icons/energy.svg";
 import GasIcon from "images/icons/gas.svg";
+// consts, helpers
 import {
   COMPANY_PHONE_NUMBER,
-  COMPANY_EMAIL,
   TELEGRAM_URL,
-  FACEBOOK_URL,
-  LINKEDIN_URL,
 } from "constants/company-data";
 
 const WelcomeSection = () => {
@@ -50,23 +51,7 @@ const WelcomeSection = () => {
               </div>
             </div>
             <div className="welcome__footer">
-              <ul className="socials welcome__socials">
-                <li className="socials__item">
-                  <a href={TELEGRAM_URL} className="socials__link">
-                    Telegram
-                  </a>
-                </li>
-                <li className="socials__item">
-                  <a href={LINKEDIN_URL} className="socials__link">
-                    Linkedin
-                  </a>
-                </li>
-                <li className="socials__item">
-                  <a href={FACEBOOK_URL} className="socials__link">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
+              <SocialsList klass="welcome__socials" />
               <div className="welcome__down-link">
                 <a href="#below" className="down-arrow"></a>
               </div>

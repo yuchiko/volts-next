@@ -1,6 +1,9 @@
 .footer {
   padding: 6rem 0 3rem 0;
 
+  &__row {
+    margin-top: 6.5rem;
+  }
 
   &__copyright {
     width: 100%;
@@ -11,9 +14,9 @@
   &__logo {
     margin-bottom: 3rem;
     width: 100%;
-    img {
-      width: 100%;
-      height: auto;
+
+    svg {
+      width: 14rem;
     }
   }
 
@@ -52,7 +55,6 @@
 }
 
 .copyright {
-  margin-top: 10rem;
 
   &__contacts {
     color: white;

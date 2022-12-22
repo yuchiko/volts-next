@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import FooterItem from "./FooterItem";
 import VoltsLogo from "images/icons/logo_shadow.svg";
+import SocialsList from "components/SocialsList";
 
 const Footer = () => {
   return (
@@ -18,75 +20,36 @@ const Footer = () => {
           </div>
           <div className="cell large-offset-1 large-8 footer__menus">
             <ul className="menu">
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Головна сторінка
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Послуги
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  FAQ
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Контакти
-                </a>
-              </li>
+              <FooterItem href="#" text="Головна сторінка" />
+              <FooterItem href="#" text="Послуги" />
+              <FooterItem href="#" text="Інфо-центр" />
+              <FooterItem href="#" text="Контакти" />
             </ul>
             <ul className="menu">
-              <li className="menu__item">
-                <span className="menu__text">Важливо</span>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  FAQs
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Документація
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Документація
-                </a>
-              </li>
+              <FooterItem text="Послуги" />
+              <FooterItem href="#" text="Газ" />
+              <FooterItem href="#" text="Електроенергія" />
             </ul>
             <ul className="menu">
-              <li className="menu__item">
-                <span className="menu__text">Соцільні мержі</span>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Telegram
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Linkedin
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#" className="menu__link">
-                  Facebook
-                </a>
-              </li>
+              <FooterItem text="Важливо" />
+              <FooterItem href="#" text="FAQs" />
+              <FooterItem href="#" text="Документація" />
+              <FooterItem href="#" text="Сертифікати" />
             </ul>
           </div>
-          <div className="footer__copyright copyright cell small-12">
+          <div className="footer__row cell small-12">
+            <div className="d-flex flex-ai-center">
+              <span className="m-r-3">Соціальні мережі</span>
+              <SocialsList asIcons />
+            </div>
+          </div>
+          <div className="footer__row footer__copyright copyright cell small-12">
             <div className="copyright__contacts">
               <a href="#">Політика конфіденційності</a>
               <a href="mailto:office@volts.energy">office@volts.energy</a>
               <a href="tel:+380444904558">+38(044) 490 45 58</a>
             </div>
-            <span>© 2003-2022</span>
+            <span>© 2019-{new Date().getFullYear()}</span>
           </div>
         </div>
       </div>
