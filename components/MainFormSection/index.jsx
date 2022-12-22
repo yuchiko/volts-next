@@ -43,7 +43,7 @@ const MainFormSection = () => {
               <h2 className="sc__heading main-form__heading">
                 Підключитись до
               </h2>
-              <VoltsLogo />
+              <VoltsLogo className="main-form__logo" />
             </div>
             <p className="main-form__subheader">
               Якщо ваша компанія розглядає можливість отримувати постачання
