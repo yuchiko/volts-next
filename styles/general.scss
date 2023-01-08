@@ -27,6 +27,10 @@ body {
   line-height: 1.5;
 }
 
+.body-content {
+  padding-top: $header-height;
+}
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
 a:focus,
 button:focus {

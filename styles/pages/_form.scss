@@ -1,0 +1,68 @@
+@use "sass:color";
+
+.fcons-page {
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #F8F9FA;
+    text-align: center;
+  }
+}
+
+.fcons {
+  margin-top: 40px;
+
+  &__tab-headers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tab-header {
+    display: flex;
+    background: color.scale(#fefefe, $alpha: -90%);
+    padding: 20px 40px 15px 20px;
+    border-radius: 20px 20px 0 0;
+    width: 220px;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    &.is-active {
+      background: #fefefe;
+
+      span {
+        color: #151516;
+      }
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #FEFEFE;
+    }
+  }
+
+  &__tab-body {
+    position: relative;
+    background: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+  }
+
+}
+
+.f-input {
+  border: 1.5px solid #7F8180;
+  background: none;
+
+  &:active, &:focus {
+    border-color: white;
+    background: none;
+  }
+}
